@@ -1,15 +1,27 @@
-# rest-llm
+# rest-llm (Quarkus + Kotlin + LangChain4j)
 
-This is a playground for building a REST API for LLMs using FastAPI and LangChain. The goal is to create a simple and extensible API that can be used to interact with various LLMs and tools.
+This is a dummy project setup for building a REST API for LLMs using Quarkus/Kotlin and LangChain4j. 
+
+## Prerequisites
+- Java 17
+- Maven 3.8.6
+- Docker
+- Ollama
+
+## Running the Application
+To run the application, you need to have Ollama installed and running. You can pull the model using the following command:
 
 ```cmd
-ollama run llama3.2
+ollama pull llama3.2
+ollama run llama3.2 
 ```
+
+Then, run the application with:
 
 ```cmd
 cd api
-mvn clean package
-mvn quarks:dev
+mvn clean package 
+mvn quarkus:dev
 ```
 
 ## API Documentation
