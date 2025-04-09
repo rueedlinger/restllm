@@ -19,9 +19,8 @@ ollama run llama3.2
 Then, run the application with:
 
 ```cmd
-cd api
 mvn clean package 
-mvn quarkus:dev
+mvn -pl api quarkus:dev
 ```
 
 ## API Documentation
